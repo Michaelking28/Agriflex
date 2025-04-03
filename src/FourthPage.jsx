@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import farmtoolsimage from "./assets/farm-tools-removebg-preview.png";
-import "./fourthPage.css";
+import "./FourthPage.css";
 
 const FourthPage = () => {
     const navigate = useNavigate();
