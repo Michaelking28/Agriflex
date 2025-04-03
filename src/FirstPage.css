@@ -1,0 +1,62 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5eb;
+}
+.first-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 0;
+    position: relative;
+    text-align: center;
+}
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 12vh;
+}
+.logo{
+width: 100px;
+height: 100px;
+}
+
+.app-name {
+    font-size: 24px; 
+    font-weight: bold;
+    color: #1f4d26;
+    margin-top: 8px;
+}
+.wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+   
+.get-started-button{
+    position: absolute;
+    bottom: 40px;
+    width: 80%;
+    max-width: 280px;
+    padding: 12px;
+    background-color: #f5f5eb;
+    color: #1f4d26;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    text-align: center;
+    cursor: pointer;
+}
+
