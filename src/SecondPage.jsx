@@ -1,6 +1,6 @@
 import React from "react";
 import "./SecondPage.css";
-import plantImage from "./assets/plant-image.jpg";
+import plantImage from "./assets/plant-image-removebg-preview.png";
 import { useNavigate } from "react-router-dom";
 
 function SecondPage () {

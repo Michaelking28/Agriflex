@@ -1,0 +1,130 @@
+.signup-container {
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background: #EFF2EA;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+.back-button {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    
+}
+.progress-indicator {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+.dot {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background: #ccc;
+    border-radius: 50%;
+}
+.dot.active{
+    background: #5da84c;
+}
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 14px;
+    outline: none;
+    background: white;
+}
+.terms {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    margin: 10px 0;
+    text-align: left;
+}
+.terms input  {
+    margin-right: 5px;
+}
+.terms-link {
+    color: #5da84c;
+    cursor: pointer;
+    font-weight: bold;
+}
+.create-account-btn {
+    width: 100%;
+    padding: 12px;
+    background: #c1e1c1;
+    color: black;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.or-text {
+    margin: 10px 0;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.google-btn, .apple-btn {
+    border: none;
+    background: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-text {
+    margin-top: 10px;
+}
+.login-link {
+    color: #5da84c;
+    cursor: pointer;
+    font-weight: bold;
+}
+.password-field {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 0 10px;
+    background: white;
+    position: relative;
+}
+.password-field input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 12px;
+}
+.toggle-password {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 12px;
+    position: absolute;
+    right: 10px;
+}

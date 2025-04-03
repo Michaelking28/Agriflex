@@ -1,4 +1,4 @@
-import logo from "./assets/logo.jpg";
+import logo from "./assets/logo-removebg-preview.png";
 import { useNavigate } from "react-router-dom";
 import "./FirstPage.css";
 function FirstPage() {

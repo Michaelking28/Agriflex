@@ -1,6 +1,12 @@
-import grocerybasket from "./assets/third.jpg";
-import './ThirdPage.css' ;
-function ThirdPage() {
+import { useNavigate } from "react-router-dom";
+import grocerybasket from "./assets/third-removebg-preview.png";
+import "./ThirdPage.css";
+const ThirdPage = () => {
+  const navigate = useNavigate();
+
+  const handleNextClick = () => {
+    navigate("/fourth");
+  };
   return (
     <div className="onboarding-container">
       <button className="skip-btn">Skip</button>
@@ -18,9 +24,11 @@ function ThirdPage() {
         <span className="dot active"></span>
         <span className="dot"></span>
       </div>
-      <button className="next-btn">Next</button>
+      <button className="next-btn" onClick={handleNextClick}>
+        Next
+      </button>
     </div>
   );
-}
+};
 
 export default ThirdPage;

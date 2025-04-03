@@ -1,0 +1,49 @@
+.reset-confirm-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #ECEDE6;
+    text-align: center;
+    padding: 20px;
+}
+
+.reset-confirm-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #1D1D1B;
+    margin-bottom: 10px;
+}
+
+.reset-confirm-icon {
+    height: 120px;
+    margin: 20px 0;
+}
+
+
+.reset-confirm-text {
+    font-size: 14px;
+    color: #4F4F4F;
+    max-width: 80%;
+    line-height: 1.5;
+}
+
+.reset-confirm-btn {
+    background-color: #103E26;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    width: 80%;
+    max-width: 300px;
+}
+
+.reset-confirm-btn:active {
+    background-color: #092E1B;
+}
+
