@@ -1,11 +1,17 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./SignupPage.css";
+import "./SignupPage.css"; // Assuming you're using external CSS for styling
 
 function SignupPage() {
   const navigate = useNavigate();
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
+  const [isChecked, setIsChecked] = useState(false); // State for checkbox
+
+  // Handle checkbox state
+  const handleCheckboxChange = (event) => {
+    setIsChecked(event.target.checked);
+  };
 
   return (
     <div className="signup-container">
@@ -43,7 +49,7 @@ function SignupPage() {
             className="toggle-password"
             onClick={() => setShowPassword(!showPassword)}
           >
-           {showPassword ? "👁" : "👁"} 
+            {showPassword ? "👁" : "👁"} {/* Correct icons for visibility toggle */}
           </button>
         </div>
 
@@ -59,27 +65,46 @@ function SignupPage() {
             className="toggle-password"
             onClick={() => setShowConfirmPassword(!showConfirmPassword)}
           >
-            {showPassword ? "👁" : "👁"} 
+            {showConfirmPassword ? "👁" : "👁"} {/* Correct icons for visibility toggle */}
           </button>
         </div>
 
         {/* Terms and Agreement */}
-        <label className="terms">
-          <input type="checkbox" required />
-          By using Agriflex, you agree to the
-          <span className="terms-link" onClick={() => navigate("/terms")}>
-            Terms
-          </span>{" "}
-          and{" "}
-          <span className="terms-link" onClick={() => navigate("/privacy")}>
-            Privacy Policy
-          </span>
-        </label>
+        <div>
+          <label className="terms">
+            <input
+              type="checkbox"
+              required
+              checked={isChecked}
+              onChange={handleCheckboxChange}
+            />
+            By using Agriflex, you agree to the
+            <span
+              className="terms-link"
+              onClick={() => navigate("/terms")}
+              style={{ cursor: "pointer", textDecoration: "underline" }}
+            >
+              Terms
+            </span>{" "}
+            and{" "}
+            <span
+              className="terms-link"
+              onClick={() => navigate("/privacy")}
+              style={{ cursor: "pointer", textDecoration: "underline" }}
+            >
+              Privacy Policy
+            </span>
+          </label>
 
-        {/* Create Account Button */}
-        <button type="submit" className="create-account-button">
-          Create account
-        </button>
+          {/* Create Account Button */}
+          <button
+            type="submit"
+            className="create-account-button"
+            disabled={!isChecked} // Disable button if checkbox is not checked
+          >
+            Create account
+          </button>
+        </div>
       </form>
 
       {/* Social Sign-Up */}
