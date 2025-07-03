@@ -9,7 +9,7 @@ const FourthPage = () => {
     return (
         <div className="fourth-page">
             <img src={farmtoolsimage} alt="farm tools" className="farm-tools-image"/>
-            <h1>Hir or Rent Farm Tools at your convenience</h1>
+            <h1>Hire or Rent Farm Tools at your convenience</h1>
             <p> Connecting farmers to vendors and companies that have farming equipment for hire and for sale</p>
 
             <div className="pagination">
